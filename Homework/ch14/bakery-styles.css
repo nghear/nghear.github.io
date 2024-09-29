@@ -66,7 +66,7 @@ main {
   line-height: 1.8em;
   color: #555;
   padding: 1em;
-  border: 4px #EADDC4;
+  border: double 4px #EADDC4;
   border-radius: 25px;
   margin: 2.5%;
 }
@@ -92,10 +92,7 @@ aside {
   padding: 1em;
   padding-left: 45px;
   border-top-right-radius: 25px;
-  margin-top: 1em;
-  margin-right: 2.5%;
-  margin-bottom: 0;
-  margin-left: 10%;
+  margin: 1em 2.5% 0 10%;
 }
 /* misc styles */
 footer {
