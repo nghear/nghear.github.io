@@ -1,0 +1,62 @@
+@charset "utf-8";
+html {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: rgb(24, 25, 26);
+
+}
+main {
+    font-family: Impact;
+    font-size: 150%;
+    color: bisque;
+    margin-top: 5%;
+}
+
+/* header style */
+header {
+    color: cornsilk;
+    background: url(images/solips.png) no-repeat center center;
+    background-size: cover;
+    height: 8em;
+}
+
+
+/* link style */
+a:link, a:visited {
+    color:cornflowerblue;
+}
+a:focus, a:hover, a:active {
+    color: rgb(213, 49, 49);
+}
+a {
+    text-decoration: none;
+    padding-bottom: .2em;
+}
+
+/* text style */
+h1 {
+    font-family: Helvetica;
+    text-align: center;
+
+}
+h2 {
+    font-family: Verdana;
+    margin-left: 5%;
+}
+/* Table style */
+table {
+    border: 1px solid white;
+    table-layout: auto;
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+}
+td {
+    border: 1px solid white;
+    height: 150px;
+}
