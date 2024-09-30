@@ -7,8 +7,10 @@ html {
 }
 
 body {
-    background-color: rgb(24, 25, 26);
-
+    background: url(images/solips.png);
+    background-size: cover;
+    margin: 0;
+    
 }
 main {
     font-family: Impact;
@@ -20,9 +22,7 @@ main {
 /* header style */
 header {
     color: cornsilk;
-    background: url(images/solips.png) no-repeat center center;
-    background-size: cover;
-    height: 8em;
+    height: 5em;
 }
 
 
@@ -59,4 +59,5 @@ table {
 td {
     border: 1px solid white;
     height: 150px;
+    background: rgb(0,0,0,.7);
 }
