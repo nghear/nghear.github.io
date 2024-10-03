@@ -2,16 +2,17 @@
 html {
     box-sizing: border-box;
 }
-* {
+*, *:before, *after {
     box-sizing: inherit;
 }
 @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
     /* force table to not be like table */
+    /* for later use of table if needed
     table, thead, tbody, th, td, tr, caption {
         display: block;
     }
 
-    /* Hide table header */
+     // Hide table header //
     thead tr {
         position: absolute;
         top: -9999px;
@@ -52,12 +53,41 @@ main {
     color: bisque;
     margin-top: 5%;
 }
+#Homework {
+    border: 3px solid #783F27;
+    display: flex;
+    align-items: stretch;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5%;
+}
+section {
+    background: rgb(0,0,0,.7);
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid rgb(218, 85, 2);
+    width: 240px;
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+}
+.Title {
+    background-color: #321306;
+    color: rgb(251, 150, 9);
+    line-height: 2em;
+}
+.Chap_number {
+    border-bottom: 2px solid rgb(218,85,2);
+}
+p {
+    text-align: center;
+}
 
-/* header style */
+/* header style (not using)
 header {
     color: cornsilk;
     height: 5em;
-}
+} */
 
 
 /* link style */
@@ -82,7 +112,7 @@ h2 {
     font-family: Verdana;
     margin-left: 5%;
 }
-/* Table style */
+/* Table style (not using)
 table {
     border: 1px solid white;
     table-layout: auto;
@@ -94,4 +124,4 @@ td {
     border: 1px solid white;
     height: 100px;
     background: rgb(0,0,0,.7);
-}
+} */
