@@ -115,12 +115,11 @@ section {
     background-color: #321306;
     color: rgb(251, 150, 9);
     line-height: 3em;
-    padding;
     text-align: center center;
 }
 .Chap_number {
     border-bottom: 2px solid rgb(218,85,2);
-    font-size:large;
+    font-size: large;
 }
 p {
     text-align: center;
