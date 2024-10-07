@@ -1,0 +1,137 @@
+@charset "utf-8";
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+#navbar-nav {
+    align-items: center !important;
+}
+
+
+
+header nav li a {
+    font-family: Verdana;
+    font-size: 15px;
+}
+
+.navbar #container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: inherit;
+    align-content: normal;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+
+nav li.nav-item:hover {
+    border-bottom: 3px solid #fff200;
+    color: #fff200;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    background-color: rgb(255, 255, 255);
+    display: block;
+    border: 1px solid;
+    border-radius: .5em;
+    padding: .5em 1em;
+    margin: .5em;
+  }
+  nav ul li {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+  }
+
+#container {
+    display: grid;
+    grid-template-rows: auto auto 5em;
+    grid-template-columns: minmax(25em, 1fr) 16em;
+    grid-template-areas:
+    "banner banner"
+    "main   hours"
+    "footer footer";
+}
+
+header img {
+    max-height: 75px;
+    background-color: white;
+    border-radius: 98%;
+}
+header {
+    color: white;
+    background: url(image/Banner.png) no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    grid-area: banner;
+    height: 16.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+tbody, td, tfoot, th, thead, tr {
+    border-width: 1px !important;
+}
+
+h1.title {
+    font-family: Tamoha;
+    font-size:25px;
+    color: rgb(0, 174, 255);
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    line-height: 1.5;
+    margin-top: 30px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+body {
+    margin: 0;
+    text-align: center;
+}
+
+main {
+    font-family: 'Stint Ultra Expanded', cursive;
+    background-color: white;
+    line-height: 1.8em;
+    color: #555;
+    padding: 1em;
+    border: double 4px #EADDC4;
+    border-radius: 25px;
+    margin-top: 5%;
+}
+
+#intro {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 20px;
+}
