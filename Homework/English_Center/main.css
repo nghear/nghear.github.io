@@ -84,13 +84,8 @@ a {
     color: rgb(244, 49, 60);
 }
 
-a.Click {
-    border: 2px solid red;
-    background: red;
-    color: white;
-}
-tbody, td, tfoot, th, thead, tr {
-    border-width: 1px !important;
+a.Click:hover, a.Click:active {
+    color: rgb(44, 3, 118);
 }
 
 h1.title {
@@ -102,6 +97,10 @@ h1.title {
     text-transform: uppercase;
     line-height: 1.5;
     margin: 10px;
+}
+
+h2 {
+    color: rgb(244, 49, 60);
 }
 
 p {
