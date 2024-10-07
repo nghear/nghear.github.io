@@ -112,10 +112,11 @@ section {
     flex-direction: column;
 }
 .Title {
-    background-color: #321306;
     color: rgb(251, 150, 9);
     line-height: 3em;
     text-align: center center;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 .Chap_number {
     border-bottom: 2px solid rgb(218,85,2);
@@ -146,6 +147,11 @@ h1 {
 h2 {
     font-family: Verdana;
     margin-left: 5%;
+}
+
+.preview {
+    width: 70%;
+    margin-bottom: 2em;
 }
 /* Table style (not using)
 table {
