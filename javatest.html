@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Javascript Variables</h1>
+
+        <p>Strings are written with quotes.</p>
+        <p>Numbers are written without quotes</p>
+
+        <p id="demo"></p>
+
+        <script>
+            // const pi = 3.14;
+            const pi = "3.14";
+            let x = pi + 1;
+            let person = "John Doe";
+            let answer = "lol";
+
+            const tuoiHienTai = 20;
+            const soNamTang = 4;
+            const tuoiSauSoNamTang = tuoiHienTai + soNamTang;
+            let tuoiHienTai2 = tuoiHienTai;
+            let soNamTang2 = soNamTang;
+            soNamTang2++;
+            tuoiHienTai2++;
+
+            document.getElementById("demo").innerHTML = tuoiHienTai + "<br>" + soNamTang + "<br>" + tuoiSauSoNamTang + "<br>" + tuoiHienTai2;
+            console.log(soNamTang2 + tuoiHienTai2);
+            
+
+            // document.getElementById("demo").innerHTML = pi + "<br>" + person + "<br>" + answer;
+            // document.getElementById("demo").innerHTML = x + "<br>" + person + "<br>" + answer;
+        </script>
+        
+    </body>
+</html>
