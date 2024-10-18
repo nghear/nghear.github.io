@@ -1,3 +1,2 @@
-function myFunction() {
-    window.alert("Hello World!");
-}
+var footballTeam = [teamName, coachName, players];
+var players = [ Name, age, position, isinjured];
