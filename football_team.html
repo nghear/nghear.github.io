@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        const footballTeam = {
+        teamName: "Manchester",
+        coachName: "Coach A",
+        players: [],
+
+
+        addPlayer: function (name, age, position, isInjured) {
+            const player = {
+                name: name,
+                age: age,
+                position: position,
+                isInjured: isInjured,
+            };
+            this.players.push(player);
+        },
+
+
+        listPlayers: function () {
+            this.players.forEach(  
+                (player) => { 
+                    console.log(`Name: ${player.name},
+                               \nAge: ${player.age},
+                               \nPosition: ${player.position}, 
+                               \nInjuries: ${player.isInjured ? "Yes" : "No"}`); 
+                }
+            );
+        },
+
+
+        injuredPlayers: function () {
+            const injuredCount = this.players.filter( (player) => player.isInjured).length;
+            console.log(`Number of Injured Players: ${injuredCount}`);
+        },
+
+
+        teamInfo: function () {
+            console.log(`Team Name: ${this.teamName}`);
+            console.log(`Coach: ${this.coachName}`);
+            console.log(`Number of Players: ${this.players.length}`);
+        },
+    };
+
+
+    footballTeam.addPlayer("Siu", 39, "Forward", false);
+    footballTeam.addPlayer("Radamel Falcao", 38, "Striker", true);
+    footballTeam.addPlayer("Ankara Messi", 37, "Forward", false);
+
+    footballTeam.teamInfo();
+    footballTeam.injuredPlayers();
+    footballTeam.listPlayers();
+    </script>
+  </body>
+</html>
