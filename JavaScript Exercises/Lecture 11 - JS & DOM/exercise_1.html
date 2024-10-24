@@ -48,6 +48,16 @@
 
             // Kiểm tra tính hợp lệ của tên đăng nhập và mật khẩu
             // Nếu tên đăng nhập ngắn hơn 4 ký tự và mật khẩu ngắn hơn 6 ký tự thì không hợp lệ
+            if (username.length < 4) {
+                document.getElementById('errorMessage').innerHTML= "invalid username";
+                return false;
+            }
+            else {
+                if (password.length < 6) {
+                    document.getElementById('errorMessage').innerHTML= "invalid password";
+                    return false;
+                }
+            }
             
             // Thêm các kiểm tra khác tùy theo yêu cầu của bạn
 
