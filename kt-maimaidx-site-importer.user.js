@@ -448,11 +448,15 @@ async function executeRecentImport(docu = document) {
 			// IDs from https://github.com/TNG-dev/Tachi/blob/staging/database-seeds/collections/songs-maimaidx.json
 			scoreData.identifier = isNicoNicoLinkImg(jacket) ? "244" : "68";
 		}
-		if (scoreData.identifier === "Trust") {
+		if (scoreData.identifier === "TRUST" || scoreData.identifier === "Trust") {
 			if (scoreData.difficulty === 13) {
-				scoreData.identifier == "TRUST";
+				scoreData.matchType = "tachiSongID";
+				scoreData.identifier = "461";
 			}
-			else scoreData.identifier == "Trust";
+			else {
+				scoreData.matchType = "tachiSongID";
+				scoreData.identifier = "1385";
+			}
 		}
 
 		const style = getChartType(e);
@@ -555,11 +559,14 @@ async function executePBImport() {
 				// IDs from https://github.com/TNG-dev/Tachi/blob/staging/database-seeds/collections/songs-maimaidx.json
 				scoreData.identifier = await isNiconicoLink(detailIdx) ? "244" : "68";
 			}
+			if (scoreData.identifier === "TRUST") {
+					scoreData.matchType = "tachiSongID";
+					scoreData.identifier = "461";
+					
+			}
 			if (scoreData.identifier === "Trust") {
-				if (scoreData.difficulty === 13) {
-					scoreData.identifier = "TRUST";
-				}
-				else scoreData.identifier = "Trust";
+					scoreData.identifier = "tachiSongID";
+					scoreData.identifier = "1385";
 			}
 
 			const scoreElem = e.querySelector(".music_score_block.w_112.t_r.f_l.f_12");
